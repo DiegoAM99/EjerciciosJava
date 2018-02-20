@@ -5,7 +5,13 @@
  */
 package ejerciciosjava;
 
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
 
 /**
  *
@@ -44,21 +50,18 @@ public class EjerciciosJava {
         }
         return true;
     }
-    public void imprimeMes(int diaSemana){
-    for(int i=0; i<diaSemana; i++){
-        print("XX_");
-    }
-    int contador=diaSemana;
-    for(int i=diaSemana; i<31; i++){
-        print(diaSemana); //imrpime con un 0 
-        contador++;
+    public void ImprimeMes(int diaSemana){
+        for(int i=0; i<diaSemana; i++){
+            print("XX_");
+        }
+        int contador=diaSemana;
+        for(int i=0; i<31;i++){
+        println();
         if(contador%7 ==0){
             println();
         }
     }
-}
-    
-    
+    }
     /**
      * @param args the command line arguments
      */
@@ -80,22 +83,13 @@ public class EjerciciosJava {
         else{
             System.out.printf("La palabra \"%s\"no es un isograma%n", Palabra);
         }
-        
-    }
-
-    private void print(String xx_) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     private void println() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    private void println(int diaSemana) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void print(int diaSemana) {
+    private void print(String xx_) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
