@@ -44,6 +44,19 @@ public class EjerciciosJava {
         }
         return true;
     }
+    public void imprimeMes(int diaSemana){
+    for(int i=0; i<diaSemana; i++){
+        print("XX_");
+    }
+    int contador=diaSemana;
+    for(int i=diaSemana; i<31; i++){
+        print(diaSemana); //imrpime con un 0 
+        contador++;
+        if(contador%7 ==0){
+            println();
+        }
+    }
+}
     
     
     /**
@@ -67,5 +80,22 @@ public class EjerciciosJava {
         else{
             System.out.printf("La palabra \"%s\"no es un isograma%n", Palabra);
         }
+        
+    }
+
+    private void print(String xx_) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void println() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void println(int diaSemana) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void print(int diaSemana) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
